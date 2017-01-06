@@ -124,7 +124,7 @@
             break;
             
         default:
-            NSLog(@"Pan gesture recognizer unknown state %d",recognizer.state);
+            NSLog(@"MLSwitch: Pan gesture recognizer unknown state %d",(int) recognizer.state);
             self.panState = UIGestureRecognizerStatePossible;
     }
     
