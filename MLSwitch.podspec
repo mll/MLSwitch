@@ -1,3 +1,12 @@
+
+Pod::Spec.new do |s|
+
+
+  s.name         = "MLSwitch"
+  s.version      = "1.0.2"
+  s.summary      = "Simple yet powerful and fast image cache."
+
+  s.description  = <<-DESC
 # MLSwitch
 ## Fully customisable UISwitch replacement
 
@@ -35,3 +44,16 @@ didSet on the outlet like this:
                 switch.switchOffset = CGPointMake(0, 0)
         }
     }
+
+                   DESC
+
+   s.homepage     = "https://github.com/mll/MLSwitch"
+   s.license   =  'MIT'
+   
+   s.author             = { "Marek Lipert" => "marek.lipert@gmail.com" }
+   s.ios.deployment_target = '5.0'
+   s.source       = { :git => "https://github.com/mll/MLSwitch.git", :tag => "1.0.2" }
+   s.source_files  = '*.{h,m}'
+   s.requires_arc = true
+
+end
